@@ -1,0 +1,378 @@
+
+
+
+
+
+<!DOCTYPE HTML>
+	
+<HTML lang="uk">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta name="author" content="Chernova"/>
+<title>Traveling Chernova</title>
+<link rel="stylesheet" href="lab2_22_1trim.css" type="text/css">
+</head>
+<body>
+<h1>Teachinder</h1>
+<secture>
+<div class="topOfSite" >
+    <input class="search" type="text" placeholder="Search"></input>
+    
+    <button class="nameOrAge">Name note Or age to search</button>
+    </div>
+    <nav class="wrapperForImportantLinks"> 
+
+        <a href="#" class="importantLinksTeachers">Teachers</a>
+        <a href="#" class="importantLinksStatistics">Statistics</a>
+        <a href="#" class="importantLinksFavourites">Favourites</a>
+        <a href="#" class="importantLinksAbout">About</a>
+        
+<button class="addTeacherButton" type="submit" value="Зберегти ">Add Teacher</button>
+    </nav>
+ 
+    <hr>
+</secture>   
+  
+    <section class="form formForSearching">
+      
+            <div class="informationAboutTeacher">
+                <a class="legend" href="#popup1">Top teachers</a>
+            </div>
+            
+            <div id="popup1" class="overlay">
+                <div class="popupContactInformation">
+                    <h2>Контактна інформація викладача</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <form>
+                            <fieldset>
+                    
+                                <label for="name">
+                                    ім'я
+                                </label><br>
+                                <input id="name" type="text" maxlength="20" placeholder="Name" autofocus >
+                                <br><label for="surname">
+                                    прізвище
+                                </label><br>
+                                <input id="surname" type="text" maxlength="25" placeholder="Surname" required><br>
+                                <br> <label for="mittename">
+                                    по-батькові
+                                </label>
+                                <input id="mittename" type="text" maxlength="20"><br>
+                                <br> <label for="sex">
+                                    стать
+                                </label>
+                                <select id="sex">
+                                    <option value="female">жінка</option>
+                                    <option value="male">чоловік</option>
+                                    <option value="other">інше</option>
+                                </select><br>
+                                <label for="date">Дата народження</label>
+                                <input id="date" type="date" ><br>
+                                <label for="email">Email</label>
+                                <input id="email" type="email">
+                                <label for="phoneNumber">
+                                    телефон
+                                </label>
+                                <input type="tel" id="phoneNumber" required>
+                                <label for="neededColor">
+                                    бажаний колір фону
+                                </label><br.></br.>
+                                <input id="neededColor" type="color">
+                                <label for="country">
+                                    Країна
+                                </label>
+                                <input id="country" type="text" pattern="[A-Za-z]">
+                                <label for="city">
+                                    місто
+                                </label><br>
+                                <input id="city" type="text" maxlength="20"><br>
+                                <label for="comments">
+                                    коментар
+                                </label>
+                    
+                                <input id="comments" type="text"><br>
+                            </fieldset>
+                    
+                           <button class="e" type="submit" value="Зберегти ">Add</button>
+                        </form>   </div>
+                </div>
+            </div>
+        </section>
+        <section>
+    <div class="boxfloat">
+            <label  for="Age">
+                Age
+            </label>
+            <input  class="age" type="number" id="age" >
+                      |
+            
+        </div>
+    <div class="boxfloat">
+            <label for="sex">
+                Sex
+            </label>
+            <select id="sex">
+                <option value="female">жінка</option>
+                <option value="male">чоловік</option>
+                <option value="other">інше</option>
+            </select>
+        </div>
+    <div class="boxfloat">
+            <label for="region">
+                Region
+            </label>
+            <select id="region">
+                <option value="eu">Europe</option>
+                <option value="as">Asia</option>
+                <option value="af">Africa</option>
+                <option value="au">Australia</option>
+                <option value="am">Amerika</option>
+            </select>   
+        </div>
+    <div class="boxfloat">
+                <input type="checkbox" id="Photo"  >
+                <label for="scales">Only with photos</label>
+    </div>
+<div class="boxfloat">
+                <input type="checkbox" id="favourite"  >
+                <label for="scales">Only favourite</label>
+</div>
+
+     
+</section>
+
+
+
+
+
+    <section class="cardsOfTeacher">
+        <p class="strelka"> &lt;</p>
+        <figure class="cardOfTeacher">
+           
+            <img src="nature.jpg" height="100" alt="something" width="100">
+                <a class="figurecaptureName" href="#popup2">Name</a>
+                <br>
+                <label  href="#">Ukraine</label>  <br>   
+                <label  href="#">Math</label>
+           
+        </figure>
+        
+        <figure class="cardOfTeacher">
+           
+            <img src="nature.jpg" height="100" alt="something" width="100">
+            <a class="figurecaptureName" href="#popup2">Name</a>
+            <br>
+            <label  href="#">Ukraine</label>  <br>   
+            <label  href="#">Math</label>
+        </figure>
+        <figure class="cardOfTeacher">
+           
+            <img src="nature.jpg" height="100" alt="something" width="100">
+             <a class="figurecaptureName" href="#popup2">Name</a>
+             <br>
+             <label  href="#">Ukraine</label>  <br>   
+             <label  href="#">Math</label>
+        </figure>
+        <figure class="cardOfTeacher">
+           
+            <img src="nature.jpg" height="100" alt="something" width="100">
+            <a class="figurecaptureName" href="#popup2">Name</a>
+            <br>
+            <label  href="#">Ukraine</label>  <br>   
+            <label  href="#">Math</label>
+        </figure>
+        <figure class="cardOfTeacher">
+           
+            <img src="nature.jpg" height="100" alt="something" width="100">
+            <a class="figurecaptureName" href="#popup2">Name</a>
+            <br>
+            <label  href="#">Ukraine</label>  <br>   
+            <label  href="#">Math</label>
+        </figure>
+        <p class="strelka"> &gt;</p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <section>
+                <div id="popup2" class="overlay">
+                    <div class="popupContactInformation">
+                       
+                        <a class="close" href="#">&times;</a>
+                        <div class="content full_card">
+                            <section id="full_card">
+                                <div class="wrapperForInformationAboutTeacher">
+    <img class="imageOfTeachers" src="nature.jpg" height="150" alt="something" width="100">
+                                <label  class="gridCellForname">
+                                    ім'я
+                                </label><br>
+                                <label class="gridCellForSurname">
+                                
+                                    прізвище
+                                </label><br>
+                                <label class="gridCellForSex">
+                                    стать
+                                </label><br>
+                                <label class="gridCellForDate">
+                                    Дата народження
+                                </label><br>
+                                <label class="gridCellForPhone">
+                                    телефон
+                                </label><br>
+                               
+                                <label class="gridCellForCountry">
+                                    Країна
+                                </label><br>
+                              
+                                <label>
+                                    коментар
+                                </label> 
+                            </div>
+                                  </section>
+                        </div> 
+                    </div>
+            </div>
+
+
+      
+    </section>
+        <hr>
+        <section>
+            
+            <table>
+                <caption> Statistics</caption>
+    
+                <tr>
+                    <th>Ім'я</th>
+                    <th>Вік</th>
+                    <th>Стать</th>
+                    <th>Країна</th>
+                </tr>
+                <tr class="row_color_white">
+                    <td>Професор1</td>
+                    <td>100</td>
+                    <td>чоловік</td>
+                    <td>Україна</td>
+                </tr>
+    
+                <tr>
+                    <td>Професор2</td>
+                    <td>30</td>
+                    <td>жінка</td>
+                    <td>Україна</td>
+                </tr>
+    
+                <tr class="row_color_white">
+                    <td>Професор3</td>
+                    <td>20</td>
+                    <td>чоловік</td>
+                    <td>Україна</td>
+                </tr>
+    
+                <tr>
+                    <td>Професор4</td>
+                    <td>40</td>
+                    <td>жінка</td>
+                    <td>Україна</td>
+                </tr>
+    
+                <tr class="row_color_white">
+                    <td>Професор5</td>
+                    <td>50</td>
+                    <td>чоловік</td>
+                    <td>Україна</td>
+                </tr>
+            </table>
+         <div class="textnumbers">
+            <a  href="#">1   </a>
+            <a  href="#">2   </a>
+            <a  href="#">3   </a>
+            <a  href="#">...Last</a>
+       </div>   
+        </section>
+     
+        <section class="cardsOfTeacher">
+            <p class="strelka"> &lt;</p>
+            <figure class="cardOfTeacher">
+               
+                <img src="nature.jpg" height="100" alt="something" width="100">
+                <figcaption id ="figurecaptureName">Name</figcaption>
+                <br>
+                <label  href="#">Ukraine</label> 
+            </figure>
+            
+            <figure class="cardOfTeacher">
+               
+                <img src="nature.jpg" height="100" alt="something" width="100">
+                <figcaption id ="figurecaptureName">Name</figcaption>
+                <br>
+                <label  href="#">Ukraine</label> 
+               
+            </figure>
+            <figure class="cardOfTeacher">
+               
+                <img src="nature.jpg" height="100" alt="something" width="100">
+                <figcaption id ="figurecaptureName">Name</figcaption>
+                <br>
+                <label  href="#">Ukraine</label> 
+            </figure>
+            <figure class="cardOfTeacher">
+               
+                <img src="nature.jpg" height="100" alt="something" width="100">
+                <figcaption id ="figurecaptureName">Name</figcaption>
+                <br>
+                <label  href="#">Ukraine</label> 
+            </figure>
+            <figure class="cardOfTeacher">
+               
+                <img src="nature.jpg" height="100" alt="something" width="100">
+                <figcaption id ="figurecaptureName">Name</figcaption>
+                <br>
+                <label  href="#">Ukraine</label> 
+            </figure>
+            <p class="strelka"> &gt;</p>
+        </section>
+        <section>
+            <hr>
+            <p>В 1991—1992 році вчителів нараховувалося 543 тис., а нині — 438 тис. В 1991—1992 начальному році на одного педагога припадало 15 школярів, а на сьогоднішній день — лише 8. Зарплата молодого учителя — 5265 грн, вчителя І категорії — 6 567 грн, учителя вищої категорії — 7 тис. грн. Багато учителів займаються репетиторством або створюють «власний бренд» у соцмережах.</p>
+            <nav class="wrapperForImportantLinks"> 
+
+                <a href="#" class="importantLinksTeachers">Teachers</a>
+                <a href="#" class="importantLinksStatistics">Statistics</a>
+                <a href="#" class="importantLinksFavourites">Favourites</a>
+                <a href="#" class="importantLinksAbout">About</a>
+                
+        <button class="addTeacherButton" >Add Teacher</button>
+            </nav>
+            </section>
+        </body>
+    
+    </html>
+
+
+
