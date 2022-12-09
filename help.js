@@ -1970,22 +1970,7 @@ function sortUsers(users, field, direction) {
     return sorted.reverse();   }
     return sorted;
 }
-// function sortUsers(users, field, direction) {
-//   users.sort((a, b) => {
-//     if (direction === 'asc') {
-//       if (a[field] < b[field]) return -1;
-//       if (a[field] > b[field]) return 1;
-//       return 0;
-//     }
-//     if (direction === 'dsc') {
-//       if (a[field] > b[field]) return -1;
-//       if (a[field] < b[field]) return 1;
-//       return 0;
-//     }
-//     return 0;
-//   });
-//   return users;
-// }
+
 function searchForUser(users, value) {
   return users.find((entry) => entry.full_name === value || entry.age === parseInt(value, 10) || entry.note === value);
 }
