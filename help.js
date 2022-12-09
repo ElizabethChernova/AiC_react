@@ -1,7 +1,7 @@
 
  const randomUserMock = [
     {
-      gender: "male",
+      gender: "Male",
       name: { title: "Mr", first: "Norbert", last: "Weishaupt" },
       location: {
         street: { number: 5597, name: "Mittelstraße" },
@@ -1878,7 +1878,6 @@ const courses = ['Mathematics', 'Physics', 'English', 'Computer Science',
 const favourite = [true, false]
 function changeFormatData(user) {
   const courseName = courses[Math.floor(Math.random() * courses.length)];
-  const addingAdditionalUserWithoutRepeat = additionalUsers.filter((a) => a.email === user.email);
 const fav =  favourite[Math.floor(Math.random() * favourite.length)];
 let id ;
 if (user.id.value === undefined) {id = user.id}
@@ -2023,7 +2022,12 @@ const foundUsers2 = searchForUser(randomUserMock, 'Norbert');
 console.log(foundUsers2 === undefined ? 'No users found' : foundUsers2);
 //--Task 6--
 console.log('~~~~~~~~~~~~~~~~~found by age~~~~~~~~~~~~~~~~~~~~');
-const foundByAgeUsers = findUserbyAge(randomUserMock, 30, '>');
-console.log(foundByAgeUsers.length);
+const helpArray = randomUserMock.filter((a)=> a.age)
+const foundByAgeUsers = findUserbyAge(helpArray, 30, '>');
+console.log(foundByAgeUsers.length*100/helpArray.length );
 
+const foundByAgeUsers2 = findUserbyAge(helpArray, 30, '<');
+console.log(foundByAgeUsers2.length*100/helpArray.length );
+const foundByAgeUsers3 = findUserbyAge(helpArray, 30, '=');
+console.log(foundByAgeUsers3.length*100/helpArray.length );
 
