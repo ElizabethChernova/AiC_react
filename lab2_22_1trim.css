@@ -1,6 +1,15 @@
+#teacher-list-rows tbody:nth-child(odd) {
+  background-color: #faf5fb;
+}
+.teacher-list td, .teacher-list th {
+  font-family: Arial, serif;
+}
+
 :root {
   --main-color: rgb(249, 83, 6);
 }
+
+
 
 body {
   margin: 75px;
