@@ -1,0 +1,21 @@
+*{
+    margin: 5px;
+}
+
+.AddUser{
+    margin-left: 40%;
+}
+#forma{
+    margin-top: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+
+.btn-dark{
+    margin-right: 10px;
+}
+

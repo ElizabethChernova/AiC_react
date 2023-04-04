@@ -1,0 +1,7 @@
+{
+  "name": "BasicExampleProlog",
+  "version": "1.0.0",
+  "dependencies": {
+    "tau-prolog": "^0.3.4"
+  }
+}

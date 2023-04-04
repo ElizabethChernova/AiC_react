@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hello, Tau Prolog!</title>
+</head>
+<body>
+<h1>Hello, Tau Prolog!</h1>
+<div id="greet_answers">
+</div>
+<script src="tau-prolog.js"></script>
+<script type="text/prolog" id="code.pl">
+init :-
+    true.
+</script>
+<script>
+    const session = pl.create(1000)
+    const parsed = session.consult("code.pl")
+    if (parsed !== true) { console.log(pl.format_answer(parsed)) }
+    const query = session.query("init.")
+    if (query !== true) { console.log(pl.format_answer(query)) }
+    // session.answer needs a callback function, here we "mute" the output
+    session.answer((a) => {})
+    // unmuted:
+    // session.answer((a) => console.log(pl.format_answer(a))))
+</script>
+</body>
+</html>

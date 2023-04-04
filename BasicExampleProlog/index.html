@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Prolog Web App</title>
+</head>
+<body>
+<h1>Prolog Web App</h1>
+<form>
+  <label for="query">Enter a Prolog query:</label>
+  <input type="text" name="query" id="query" placeholder="e.g. transport(chicken, fox), transport(grain, chicken)">
+  <button type="button" onclick="runQuery()">Submit</button>
+</form>
+<p id="output"></p>
+<script type="text/javascript" src="node_modules/tau-prolog/modules/dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tau-prolog/1.4.0/tau-prolog.js"></script>
+
+<script type="text/javascript" src="tau-prolog.js"></script>
+
+<script type="text/javascript" src="tau-prolog/core.js"></script>
+<script type="text/javascript" src="tau-prolog/lists.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tau-prolog@1.4.0/dist/tau-prolog.js"></script>
+
+<script>
+  // Create a new Prolog engine
+  const session = pl.create(1000);
+
+  // Load the Prolog code into the engine
+  session.consult('transport.pl');
+
+  // Define a function to run the Prolog query
+  function runQuery() {
+    // Get the input query from the form
+    const query = document.getElementById('query').value;
+
+    // Clear the output area
+    document.getElementById('output').innerHTML = '';
+
+    // Run the query and display the results
+    session.query(query, x => document.getElementById('output').innerHTML += pl.format_answer(x) + '<br>');
+  }
+</script>
+</body>
+</html>
