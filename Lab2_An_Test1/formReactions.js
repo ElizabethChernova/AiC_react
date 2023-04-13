@@ -113,11 +113,11 @@ function chooseMessage() {
     document.getElementById("titleInput").value = val;
     switch (val){
         case "Greeting": {
-            document.getElementById("spamInput").value = "Hello, user!";
+            document.getElementById("spamInput").value = "Hello!";
             break;
         }
         case "Advertisement": {
-            document.getElementById("spamInput").value = "Discover a world of imagination and knowledge at BestBooks. From classic literature to the latest bestsellers, we've got something for everyone. Come and explore our shelves today!";
+            document.getElementById("spamInput").value = "THis is an advertisement!";
             break;
         }
         case "Blank": {

@@ -27,7 +27,7 @@ const BookForm = ({ books, addBook, updateBook }) => {
             addBook(book);
         }
 
-        history.push('/ ');
+        history.push('/adminApp');
     };
 
     return (
