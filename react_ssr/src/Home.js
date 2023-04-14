@@ -16,5 +16,12 @@ function Home(props) {
             </NavLink>
         </div>);
 }
+export async function getServerSideProps() {
+    // Fetch data from external api
+    const res = await fetch('https://.../data')
+    const data = await res.json()
 
+    // Will be passed to the page component as props
+    return { props: { data } }
+}
 export default Home;
